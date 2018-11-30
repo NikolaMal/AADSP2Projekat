@@ -1,0 +1,4 @@
+﻿  processing.cpp
+c:\users\nikola\documents\visual studio 2015\projects\model0\model0\processing.cpp(41): warning C4018: '<': signed/unsigned mismatch
+  model0.vcxproj -> c:\users\nikola\documents\visual studio 2015\Projects\model0\Debug\model0.exe
+  model0.vcxproj -> c:\users\nikola\documents\visual studio 2015\Projects\model0\Debug\model0.pdb (Full PDB)
