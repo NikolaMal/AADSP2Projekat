@@ -1,4 +1,10 @@
-﻿  processing.cpp
+﻿  stdafx.cpp
+  WAVheader.cpp
+  processing.cpp
 c:\users\nikola\documents\visual studio 2015\projects\model0\model0\processing.cpp(41): warning C4018: '<': signed/unsigned mismatch
-  model0.vcxproj -> c:\users\nikola\documents\visual studio 2015\Projects\model0\Debug\model0.exe
-  model0.vcxproj -> c:\users\nikola\documents\visual studio 2015\Projects\model0\Debug\model0.pdb (Full PDB)
+  model0.cpp
+c:\users\nikola\documents\visual studio 2015\projects\model0\model0\model0.cpp(53): warning C4244: '=': conversion from 'double' to 'WORD', possible loss of data
+c:\users\nikola\documents\visual studio 2015\projects\model0\model0\model0.cpp(97): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  model0.vcxproj -> C:\Users\Nikola\Documents\Visual Studio 2015\Projects\model0\Debug\model0.exe
+  model0.vcxproj -> C:\Users\Nikola\Documents\Visual Studio 2015\Projects\model0\Debug\model0.pdb (Full PDB)

@@ -59,7 +59,6 @@ void process(double sampleBuffers[MAX_NUM_CHANNEL][BLOCK_SIZE])
 	int i;
 	AudioExpander_t expander;
 	audio_expander_init(&expander);
-
 	double Ls_buffer[BLOCK_SIZE];
 	double L_buffer[BLOCK_SIZE];
 	double C_buffer[BLOCK_SIZE];
@@ -70,10 +69,8 @@ void process(double sampleBuffers[MAX_NUM_CHANNEL][BLOCK_SIZE])
 	{
 		Ls_buffer[i] = sampleBuffers[0][i] * DECIBEL_GAIN_MINUS_6DB;
 		L_buffer[i] = sampleBuffers[0][i] * DECIBEL_GAIN_MINUS_6DB;
-
 		R_buffer[i] = sampleBuffers[1][i] * DECIBEL_GAIN_MINUS_6DB;
 		Rs_buffer[i] = sampleBuffers[1][i] * DECIBEL_GAIN_MINUS_6DB;
-
 	}
 
 
@@ -81,20 +78,17 @@ void process(double sampleBuffers[MAX_NUM_CHANNEL][BLOCK_SIZE])
 	{
 		C_buffer[i] = L_buffer[i] + R_buffer[i];
 		C_buffer[i] = C_buffer[i] * DECIBEL_GAIN_MINUS_3DB;
-
-		gst_audio_dynamic_transform_expander_double(&expander, Ls_buffer, BLOCK_SIZE);
-		gst_audio_dynamic_transform_expander_double(&expander, Rs_buffer, BLOCK_SIZE);
-
 	}
+
+	gst_audio_dynamic_transform_expander_double(&expander, Ls_buffer, BLOCK_SIZE);
+	gst_audio_dynamic_transform_expander_double(&expander, Rs_buffer, BLOCK_SIZE);
 
 	for (i = 0; i < BLOCK_SIZE; i++) // stage 3
 	{
 		Ls_buffer[i] = Ls_buffer[i] * DECIBEL_GAIN_MINUS_2DB;
 		Rs_buffer[i] = Rs_buffer[i] * DECIBEL_GAIN_MINUS_2DB;
-
 		L_buffer[i] = C_buffer[i] * DECIBEL_GAIN_MINUS_6DB;
 		R_buffer[i] = C_buffer[i] * DECIBEL_GAIN_MINUS_6DB;
-
 	}
 
 	for (i = 0; i < BLOCK_SIZE; i++) // stage 4
