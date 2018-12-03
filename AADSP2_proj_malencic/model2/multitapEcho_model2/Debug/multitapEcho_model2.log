@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (multitapEcho_model2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  model2.cpp
+d:\aadsp2_ra122_2015\aadsp2_proj_malencic\model2\multitapecho_model2\model2.cpp(54): warning C4244: '=': conversion from 'double' to 'WORD', possible loss of data
+  multitapEcho_model2.vcxproj -> D:\AADSP2_ra122_2015\AADSP2_proj_malencic\model2\Debug\model2.exe
+  multitapEcho_model2.vcxproj -> D:\AADSP2_ra122_2015\AADSP2_proj_malencic\model2\Debug\model2.pdb (Full PDB)

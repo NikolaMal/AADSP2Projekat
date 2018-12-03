@@ -58,12 +58,13 @@ void process(double sampleBuffers[MAX_NUM_CHANNEL][BLOCK_SIZE])
 {
 	int i;
 	AudioExpander_t expander;
-	audio_expander_init(&expander);
 	double Ls_buffer[BLOCK_SIZE];
 	double L_buffer[BLOCK_SIZE];
 	double C_buffer[BLOCK_SIZE];
 	double R_buffer[BLOCK_SIZE];
 	double Rs_buffer[BLOCK_SIZE];
+	audio_expander_init(&expander);
+
 
 	for (i = 0; i < BLOCK_SIZE; i++) // stage 1
 	{
