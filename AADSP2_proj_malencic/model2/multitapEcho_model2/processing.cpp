@@ -19,35 +19,35 @@ void audio_expander_init(AudioExpander_t * expander) {
 }
 
 void gst_audio_dynamic_transform_expander_double(AudioExpander_t * expander,
-	DSPfract * data, unsigned int num_samples) {
-	double val, threshold = expander->threshold, zero;
-	int i;
+	DSPfract * data, DSPushort num_samples) {
+	DSPfract val, threshold = expander->threshold, zero;
+	DSPint i;
 
 	/* Nothing to do for us here if threshold equals 0.0
 	* or ratio equals 1.0 */
-	if (expander->threshold == 0.0 || expander->ratio == 1.0)
+	if (expander->threshold == FRACT_NUM(0.0) || expander->ratio == FRACT_NUM(1.0))
 		return;
 
 	/* zero crossing of our function */
-	if (expander->ratio != 0.0)
-		zero = threshold - threshold / expander->ratio;
+	if (expander->ratio != FRACT_NUM(0.0))
+		zero = threshold - threshold / FRACT_NUM(expander->ratio);
 	else
 		zero = 0.0;
 
-	if (zero < 0.0)
+	if (zero < FRACT_NUM(0.0))
 		zero = 0.0;
 
 	for (i = 0; i < num_samples; i++) {
 		val = data[i];
 
 		if (val < threshold && val > zero) {
-			val = expander->ratio * val + threshold * (1.0 - expander->ratio);
+			val = expander->ratio * val + threshold * FRACT_NUM(1.0 - expander->ratio);
 		}
-		else if ((val <= zero && val > 0.0) || (val >= -zero && val < 0.0)) {
+		else if ((val <= zero && val > FRACT_NUM(0.0)) || (val >= -zero && val < FRACT_NUM(0.0))) {
 			val = 0.0;
 		}
 		else if (val > -threshold && val < -zero) {
-			val = expander->ratio * val - threshold * (1.0 - expander->ratio);
+			val = expander->ratio * val - threshold * FRACT_NUM(1.0 - expander->ratio);
 		}
 		data[i] = (double)val;
 	}

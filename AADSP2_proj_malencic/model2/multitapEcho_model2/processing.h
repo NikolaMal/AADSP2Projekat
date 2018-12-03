@@ -1,12 +1,12 @@
 #include "defines.h"
 
 typedef struct __AudioExpander {
-	double threshold;
-	double ratio;
+	DSPfract threshold;
+	DSPfract ratio;
 } AudioExpander_t;
 
 
 void audio_expander_init(AudioExpander_t * expander);
 void gst_audio_dynamic_transform_expander_double(AudioExpander_t * expander,
-	DSPfract * data, unsigned int num_samples);
+	DSPfract * data, DSPushort num_samples);
 void process();

@@ -1,19 +1,19 @@
-cd D:\AADSP2_ra122_2015\AADSP2_proj_malencic\model0\Debug
+cd C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\model0\Debug
 
-"model0.exe" D:\AADSP2_ra122_2015\AADSP2_proj_malencic\TestStreams\titanic_horn.wav D:\AADSP2_ra122_2015\AADSP2_proj_malencic\OutputStreams\output_model0.wav 2 0.5
+"model0.exe" C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\TestStreams\titanic_horn.wav C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\OutputStreams\output_model0.wav 2 0.5
 
-cd D:\AADSP2_ra122_2015\AADSP2_proj_malencic\model1\Debug
+cd C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\model1\Debug
 
-"model1.exe" D:\AADSP2_ra122_2015\AADSP2_proj_malencic\TestStreams\titanic_horn.wav D:\AADSP2_ra122_2015\AADSP2_proj_malencic\OutputStreams\output_model1.wav 2 0.5
+"model1.exe" C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\TestStreams\titanic_horn.wav C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\OutputStreams\output_model1.wav 2 0.5
 
-cd D:\AADSP2_ra122_2015\tools
+cd C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\tools
 
-"PCMCompare.exe" D:\AADSP2_ra122_2015\AADSP2_proj_malencic\OutputStreams\output_model0.wav D:\AADSP2_ra122_2015\AADSP2_proj_malencic\OutputStreams\output_model1.wav 2>D:\AADSP2_ra122_2015\AADSP2_proj_malencic\compare_output_0_1.txt
+"PCMCompare.exe" C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\OutputStreams\output_model0.wav C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\OutputStreams\output_model1.wav 2>C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\output_compare_0_1.txt
 
-cd D:\AADSP2_ra122_2015\AADSP2_proj_malencic\model2\Debug
+cd C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\model2\Debug
 
-"model2.exe" D:\AADSP2_ra122_2015\AADSP2_proj_malencic\TestStreams\titanic_horn.wav D:\AADSP2_ra122_2015\AADSP2_proj_malencic\OutputStreams\output_model2.wav 2 0.5
+"model2.exe" C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\TestStreams\titanic_horn.wav C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\OutputStreams\output_model0.wav 2 0.5
 
-cd D:\AADSP2_ra122_2015\tools
+cd C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\tools
 
-"PCMCompare.exe" D:\AADSP2_ra122_2015\AADSP2_proj_malencic\OutputStreams\output_model0.wav D:\AADSP2_ra122_2015\AADSP2_proj_malencic\OutputStreams\output_model2.wav 2>D:\AADSP2_ra122_2015\AADSP2_proj_malencic\compare_output_0_2.txt
+"PCMCompare.exe" C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\OutputStreams\output_model0.wav C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\OutputStreams\output_model2.wav 2>C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\output_compare_0_2.txt
