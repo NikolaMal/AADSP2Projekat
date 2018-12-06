@@ -1,0 +1,18 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (multitapEcho_model2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  WAVheader.cpp
+  stdfix_emu.cpp
+c:\users\nikola\documents\fax\aadsp2_pokusaj2\aadsp2projekat\aadsp2_proj_malencic\model2\multitapecho_model2\stdfix_emu.cpp(56): warning C4309: 'argument': truncation of constant value
+c:\users\nikola\documents\fax\aadsp2_pokusaj2\aadsp2projekat\aadsp2_proj_malencic\model2\multitapecho_model2\stdfix_emu.cpp(310): warning C4309: 'argument': truncation of constant value
+c:\users\nikola\documents\fax\aadsp2_pokusaj2\aadsp2projekat\aadsp2_proj_malencic\model2\multitapecho_model2\stdfix_emu.cpp(518): warning C4244: '=': conversion from 'unsigned long' to 'char', possible loss of data
+  processing.cpp
+  model2.cpp
+c:\users\nikola\documents\fax\aadsp2_pokusaj2\aadsp2projekat\aadsp2_proj_malencic\model2\multitapecho_model2\model2.cpp(54): warning C4244: '=': conversion from 'double' to 'WORD', possible loss of data
+  fixed_point_math.cpp
+c:\users\nikola\documents\fax\aadsp2_pokusaj2\aadsp2projekat\aadsp2_proj_malencic\model2\multitapecho_model2\fixed_point_math.cpp(455): warning C4309: '=': truncation of constant value
+c:\users\nikola\documents\fax\aadsp2_pokusaj2\aadsp2projekat\aadsp2_proj_malencic\model2\multitapecho_model2\fixed_point_math.cpp(517): warning C4244: '=': conversion from 'unsigned long' to 'coyote_math::accumulator::guard_t', possible loss of data
+c:\users\nikola\documents\fax\aadsp2_pokusaj2\aadsp2projekat\aadsp2_proj_malencic\model2\multitapecho_model2\fixed_point_math.cpp(527): warning C4309: '=': truncation of constant value
+c:\users\nikola\documents\fax\aadsp2_pokusaj2\aadsp2projekat\aadsp2_proj_malencic\model2\multitapecho_model2\fixed_point_math.cpp(557): warning C4309: '=': truncation of constant value
+  Generating Code...
+  LINK : C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\model2\Debug\model2.exe not found or not built by the last incremental link; performing full link
+  multitapEcho_model2.vcxproj -> C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\model2\Debug\model2.exe
+  multitapEcho_model2.vcxproj -> C:\Users\Nikola\Documents\fax\AADSP2_pokusaj2\AADSP2Projekat\AADSP2_proj_malencic\model2\Debug\model2.pdb (Full PDB)

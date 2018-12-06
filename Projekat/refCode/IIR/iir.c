@@ -16,10 +16,17 @@ double second_order_IIR(double input, double* coefficients, double* x_history, d
     double output = 0;
 
     output += coefficients[0] * input);        /* A0 * x(n)     */
+<<<<<<< HEAD
     output += coefficients[1] * x_history[0]); /* A1 * x(n-1) */
     output += coefficients[2] * history[1]); /* A2 * x(n-2)   */
     output -= coefficients[4] * y_history[0]); /* B1 * y(n-1) */
     output -= coefficients[5] * y_history[1]); /* B2 * y(n-2)   */
+=======
+    output += coefficients[1] * x_history[0]; /* A1 * x(n-1) */
+    output += coefficients[2] * x_history[1]; /* A2 * x(n-2)   */
+    output -= coefficients[4] * y_history[0]; /* B1 * y(n-1) */
+    output -= coefficients[5] * y_history[1]; /* B2 * y(n-2)   */
+>>>>>>> 075d0dfe2895e53d1cf57bd866433ee48becb33e
 
     
     y_history[1] = y_history[0];    /* y(n-2) = y(n-1) */
@@ -53,10 +60,17 @@ double Nth_order_IIR(double input, double coefficients[][6], double x_history[][
 	for ( stage = 0 ; stage < N_STAGES ; stage++) /* for two stages */
 	{
 		output += coefficients[stage][0] * temp);               /* A0 * x(n)     */
+<<<<<<< HEAD
 		output += coefficients[stage][1] * x_history[stage][0]); /* A1 * x(n-1) */
 		output += coefficients[stage][2] * history[stage][1]);   /* A2 * x(n-2)   */
 		output -= coefficients[stage][4] * y_history[stage][0]); /* B1 * y(n-1) */
 		output -= coefficients[stage][5] * y_history[stage][1]); /* B2 * y(n-2)   */
+=======
+		output += coefficients[stage][1] * x_history[stage][0]; /* A1 * x(n-1) */
+		output += coefficients[stage][2] * x_history[stage][1];   /* A2 * x(n-2)   */
+		output -= coefficients[stage][4] * y_history[stage][0]; /* B1 * y(n-1) */
+		output -= coefficients[stage][5] * y_history[stage][1]; /* B2 * y(n-2)   */
+>>>>>>> 075d0dfe2895e53d1cf57bd866433ee48becb33e
 
 		/* Shuffle values along one place for next time */
 		y_history[stage][1] = y_history[stage][0];    /* y(n-2) = y(n-1) */

@@ -1,0 +1,14 @@
+﻿  stdafx.cpp
+  model0.cpp
+model0.cpp(53): warning C4244: '=': conversion from 'double' to 'WORD', possible loss of data
+model0.cpp(97): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  processing.cpp
+processing.cpp(41): warning C4018: '<': signed/unsigned mismatch
+  WAVheader.cpp
+  Generating code
+  0 of 11 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  model0.vcxproj -> D:\AADSP2_ra122_2015\AADSP2_proj_malencic\model0\Release\model0.exe
+  model0.vcxproj -> D:\AADSP2_ra122_2015\AADSP2_proj_malencic\model0\Release\model0.pdb (Full PDB)

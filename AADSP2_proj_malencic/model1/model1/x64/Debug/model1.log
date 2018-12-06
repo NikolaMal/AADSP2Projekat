@@ -1,10 +1,10 @@
 ﻿  stdafx.cpp
   WAVheader.cpp
   processing.cpp
-c:\users\nikola\documents\visual studio 2015\projects\model1\model1\processing.cpp(41): warning C4018: '<': signed/unsigned mismatch
+d:\aadsp2_ra122_2015\aadsp2_proj_malencic\model1\model1\processing.cpp(41): warning C4018: '<': signed/unsigned mismatch
   model1.cpp
-c:\users\nikola\documents\visual studio 2015\projects\model1\model1\model1.cpp(49): warning C4244: '=': conversion from 'double' to 'WORD', possible loss of data
-c:\users\nikola\documents\visual studio 2015\projects\model1\model1\model1.cpp(93): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+d:\aadsp2_ra122_2015\aadsp2_proj_malencic\model1\model1\model1.cpp(49): warning C4244: '=': conversion from 'double' to 'WORD', possible loss of data
+d:\aadsp2_ra122_2015\aadsp2_proj_malencic\model1\model1\model1.cpp(93): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   Generating Code...
-  model1.vcxproj -> C:\Users\Nikola\Documents\Visual Studio 2015\Projects\model1\x64\Debug\model1.exe
-  model1.vcxproj -> C:\Users\Nikola\Documents\Visual Studio 2015\Projects\model1\x64\Debug\model1.pdb (Full PDB)
+  model1.vcxproj -> D:\AADSP2_ra122_2015\AADSP2_proj_malencic\model1\x64\Debug\model1.exe
+  model1.vcxproj -> D:\AADSP2_ra122_2015\AADSP2_proj_malencic\model1\x64\Debug\model1.pdb (Full PDB)
