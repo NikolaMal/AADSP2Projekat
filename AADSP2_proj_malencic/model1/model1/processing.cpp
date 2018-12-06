@@ -68,13 +68,15 @@ void process()
 	for (i = 0; i < BLOCK_SIZE; i++) // stage 1
 	{
 		* p0 = (* p0) * DECIBEL_GAIN_MINUS_6DB;
-		* p4 = (* p4) * DECIBEL_GAIN_MINUS_6DB;
+		* p4 = (* p1) * DECIBEL_GAIN_MINUS_6DB;
+		p1++;
 		p0++;
 		p4++;
 	}
 
 	p0 = sampleBuffer[0];
 	p4 = sampleBuffer[4];
+	p1 = sampleBuffer[1];
 
 	for (i = 0; i < BLOCK_SIZE; i++) // stage 2
 	{

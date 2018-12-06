@@ -5,9 +5,12 @@
 
 #include "WAVheader.h"
 
-DSPfract expander_ratio;
-DSPfract expander_threshold;
+DSPaccum expander_ratio;
+DSPaccum expander_threshold;
 DSPfract sampleBuffer[MAX_NUM_CHANNEL][BLOCK_SIZE];
+AudioExpander_t expander;
+
+
 
 int main(int argc, char* argv[])
 {
@@ -23,8 +26,13 @@ int main(int argc, char* argv[])
 	char WavOutputName[256];
 	struct WAV_HEADER inputWAVhdr, outputWAVhdr;
 
-	expander_ratio = atof(argv[3]);
-	expander_threshold = atof(argv[4]);
+	expander_ratio = (DSPaccum) atof(argv[3]);
+	expander_threshold = (DSPaccum) atof(argv[4]);
+
+	expander_ratio >>= 3;
+
+	
+	audio_expander_init(&expander);
 
 	// Init channel buffers
 	for (DSPint i = 0; i < MAX_NUM_CHANNEL; i++)
