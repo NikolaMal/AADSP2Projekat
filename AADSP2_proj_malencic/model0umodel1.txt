@@ -1,0 +1,3 @@
+1) sampleBuffer se koristi kao globalni umesto prosledjivanje parametara
+2) Greatly reduced logic instruction set, removed need for temporary buffers
+3) Used pointers for accessing array elements
